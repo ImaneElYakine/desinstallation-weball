@@ -11,6 +11,7 @@ html {
     font-family: 'Mediametrie', sans-serif;
 }
 
+/* Popup cookie */
 .modal {
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -23,8 +24,48 @@ html {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
 .modal-content {
     background-color: #fefefe;
     margin: auto;
+}
+
+/* Grid Layout */
+.item3 {
+    grid-area: main;
+    height: 80vh;
+    background: url("/img/background.png") center;
+    background-size: cover;
+}
+.item4 {
+    height: 80vh;
+    grid-area: right;
+
+}
+.item5 {
+    grid-area: footer;
+    height: 20vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'main main right right'
+    'footer footer footer footer';
+    background-color: #2196F3;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+}
+
+@media screen and (max-height: 500px) {
+    #image-bg {
+        height: 100vh;
+    }
+
+    body {
+        background-color: red;
+    }
 }
