@@ -61,11 +61,6 @@ html {
 }
 
 @media screen and (max-height: 500px) {
-    #image-bg {
-        height: 100vh;
-    }
 
-    body {
-        background-color: red;
-    }
+    
 }
